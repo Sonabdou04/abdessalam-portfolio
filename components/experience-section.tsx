@@ -27,7 +27,7 @@ export function ExperienceSection() {
           />
 
           {experience.map((job, index) => (
-            <li key={job.company} className="relative">
+            <li key={job.duration} className="relative">
               <motion.span
                 aria-hidden="true"
                 className="absolute top-2 -left-8 flex size-[15px] items-center justify-center rounded-full border border-primary/50 bg-background"
