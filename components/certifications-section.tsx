@@ -10,9 +10,9 @@ export function CertificationsSection() {
     <section id="certifications" className="px-6 py-24">
       <div className="mx-auto flex w-full max-w-4xl flex-col gap-12">
         <SectionHeading
-          eyebrow="Certifications"
-          title="Verified credentials"
-          description="Courses and exams I have completed along the way."
+          eyebrow="Zertifikate"
+          title="Verifizierte Qualifikationen"
+          description="Kurse und Prüfungen, die ich auf dem Weg abgeschlossen habe."
         />
 
         <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -49,7 +49,7 @@ export function CertificationsSection() {
                       'w-full',
                     )}
                   >
-                    View Certificate
+                    Zertifikat ansehen
                     <ArrowUpRight className="size-3.5" aria-hidden="true" />
                     <span className="sr-only">{`— ${cert.title}`}</span>
                   </a>

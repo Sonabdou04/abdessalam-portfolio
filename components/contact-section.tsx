@@ -31,11 +31,11 @@ export function ContactSection() {
 
   function validate(next = values): Errors {
     const found: Errors = {}
-    if (next.name.trim().length < 2) found.name = 'Please enter your name.'
+    if (next.name.trim().length < 2) found.name = 'Bitte geben Sie Ihren Namen ein.'
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(next.email.trim()))
-      found.email = 'Please enter a valid email address.'
+      found.email = 'Bitte geben Sie eine gültige E-Mail-Adresse ein.'
     if (next.message.trim().length < 10)
-      found.message = 'Your message should be at least 10 characters.'
+      found.message = 'Ihre Nachricht sollte mindestens 10 Zeichen lang sein.'
     return found
   }
 
@@ -59,9 +59,9 @@ export function ContactSection() {
     <section id="contact" className="px-6 py-24">
       <div className="mx-auto flex w-full max-w-4xl flex-col gap-12">
         <SectionHeading
-          eyebrow="Contact"
-          title="Let us build something"
-          description="Have a role, a project or an idea in mind? Send a note and I will reply within a couple of days."
+          eyebrow="Kontakt"
+          title="Lass uns etwas bauen"
+          description="Hast du eine Rolle, ein Projekt oder eine Idee im Kopf? Schicke mir eine Nachricht und ich antworte innerhalb von ein paar Tagen."
         />
 
         <div className="flex flex-col gap-8 md:flex-row md:items-start">
@@ -109,7 +109,7 @@ export function ContactSection() {
                     id="contact-name"
                     name="name"
                     autoComplete="name"
-                    placeholder="Jordan Reyes"
+                    placeholder="Max Mustermann"
                     value={values.name}
                     aria-invalid={errors.name ? true : undefined}
                     onChange={(event) => update('name', event.target.value)}
@@ -124,7 +124,7 @@ export function ContactSection() {
                     name="email"
                     type="email"
                     autoComplete="email"
-                    placeholder="you@company.com"
+                    placeholder="du@firma.de"
                     value={values.email}
                     aria-invalid={errors.email ? true : undefined}
                     onChange={(event) => update('email', event.target.value)}
@@ -138,22 +138,22 @@ export function ContactSection() {
                     id="contact-message"
                     name="message"
                     rows={5}
-                    placeholder="Tell me a little about what you are working on."
+                    placeholder="Erzähl mir etwas über dein Projekt oder deine Idee."
                     value={values.message}
                     aria-invalid={errors.message ? true : undefined}
                     onChange={(event) => update('message', event.target.value)}
                   />
                   <FieldError>{errors.message}</FieldError>
                   <FieldDescription>
-                    This demo form validates in the browser — connect it to your
-                    email provider to start receiving messages.
+                    Dieses Demo-Formular wird im Browser validiert — verbinde es mit
+                    einem E-Mail-Anbieter, um Nachrichten zu empfangen.
                   </FieldDescription>
                 </Field>
 
                 <Field orientation="horizontal">
                   <Button type="submit" size="lg" className="h-10 px-4">
                     <Send data-icon="inline-start" />
-                    Send Message
+                    Nachricht senden
                   </Button>
                   {sent ? (
                     <p
@@ -161,7 +161,7 @@ export function ContactSection() {
                       className="inline-flex items-center gap-1.5 text-sm text-primary"
                     >
                       <CheckCircle2 className="size-4" aria-hidden="true" />
-                      Message validated and ready to send.
+                      Nachricht validiert und bereit zum Senden.
                     </p>
                   ) : null}
                 </Field>

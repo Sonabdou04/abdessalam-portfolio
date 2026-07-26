@@ -18,9 +18,9 @@ export function ProjectsSection() {
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-12">
         <div className="mx-auto w-full max-w-4xl">
           <SectionHeading
-            eyebrow="Projects"
-            title="Selected work"
-            description="A few things I have designed, built and shipped."
+            eyebrow="Projekte"
+            title="Ausgewählte Arbeiten"
+            description="Ein paar Dinge, die ich entworfen, gebaut und ausgeliefert habe."
           />
         </div>
 
@@ -53,7 +53,7 @@ export function ProjectsSection() {
                         }
                       >
                         <ExternalLink aria-hidden="true" />
-                        Live Demo
+                        Live-Demo
                       </Badge>
                       <Badge
                         variant="secondary"

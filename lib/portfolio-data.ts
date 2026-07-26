@@ -6,14 +6,14 @@
 export const profile = {
   name: 'Aarav Mehta',
   roles: [
-    'Full Stack Developer',
-    'React Developer',
-    'Laravel Engineer',
-    'UI Craftsman',
+    'Full-Stack-Entwickler',
+    'React-Entwickler',
+    'Laravel-Entwickler',
+    'UI-Handwerker',
   ],
   tagline:
-    'I design and build fast, accessible web products — from pixel-perfect interfaces to the APIs and databases behind them.',
-  location: 'Pune, India',
+    'Ich entwerfe und baue schnelle, zugängliche Webprodukte — von pixelgenauen Interfaces bis hin zu den APIs und Datenbanken dahinter.',
+  location: 'Pune, Indien',
   email: 'hello@aaravmehta.dev',
   resumeUrl: '/resume.pdf',
   socials: {
@@ -25,14 +25,14 @@ export const profile = {
 
 export const about = {
   bio: [
-    'I am a full stack developer with a bias for shipping. Over the last three years I have built dashboards, storefronts and internal tools used by thousands of people — usually as the person who owns both the interface and the API behind it.',
-    'My favourite work sits at the intersection of performance and craft: shaving seconds off a page load, designing a component API that other developers enjoy, or replacing a brittle query with something that scales. Outside of work I write about frontend architecture and mentor junior developers.',
+    'Ich bin Full-Stack-Entwickler mit starker Fokussierung auf schnelle Umsetzung. In den letzten drei Jahren habe ich Dashboards, Shop-Frontends und interne Tools entwickelt, die von Tausenden Menschen genutzt werden — oft als die Person, die sowohl das Interface als auch die dahinterliegende API verantwortet.',
+    'Meine Lieblingsarbeit liegt an der Schnittstelle von Performance und Design: Sekunden aus Ladezeiten herausholen, eine Komponenten-API entwickeln, die andere Entwickler gern nutzen, oder eine fragile Abfrage durch etwas Skalierbares ersetzen. Außerhalb der Arbeit schreibe ich über Frontend-Architektur und unterstütze Junior-Entwickler.',
   ],
   stats: [
-    { label: 'Years of experience', value: '3+' },
-    { label: 'Projects completed', value: '25' },
-    { label: 'Technologies used', value: '18' },
-    { label: 'Open source PRs', value: '40+' },
+    { label: 'Jahre Erfahrung', value: '3+' },
+    { label: 'Abgeschlossene Projekte', value: '25' },
+    { label: 'Technologien im Einsatz', value: '18' },
+    { label: 'Open-Source-PRs', value: '40+' },
   ],
 } as const
 
@@ -65,7 +65,7 @@ export const skills: SkillCategory[] = [
     ],
   },
   {
-    category: 'Database',
+    category: 'Datenbanken',
     items: [
       { name: 'PostgreSQL', icon: 'SiPostgresql', color: '#4169E1' },
       { name: 'MySQL', icon: 'SiMysql', color: '#4479A1' },
@@ -101,40 +101,40 @@ export type Experience = {
 export const experience: Experience[] = [
   {
     company: 'Northwind Labs',
-    role: 'Full Stack Developer',
-    duration: 'Jan 2024 — Present',
+    role: 'Full-Stack-Entwickler',
+    duration: 'Jan. 2024 — Heute',
     location: 'Remote',
-    type: 'Full-time',
+    type: 'Vollzeit',
     points: [
-      'Led the migration of a legacy PHP dashboard to Next.js App Router, cutting median page load from 3.4s to 0.9s.',
-      'Designed a shared component library used by 4 product teams, with documented accessibility patterns.',
-      'Built a background job pipeline in Node.js that processes 200k+ events per day with automatic retries.',
+      'Ich habe die Migration eines bestehenden PHP-Dashboards auf den Next.js-App-Router geleitet und die durchschnittliche Ladezeit von 3,4s auf 0,9s gesenkt.',
+      'Ich habe eine gemeinsam nutzbare Komponentenbibliothek für vier Produktteams aufgebaut, inklusive dokumentierter Accessibility-Patterns.',
+      'Ich habe eine Background-Job-Pipeline in Node.js entwickelt, die über 200.000 Events pro Tag mit automatischen Retries verarbeitet.',
     ],
     tech: ['Next.js', 'TypeScript', 'Node.js', 'PostgreSQL'],
   },
   {
     company: 'Brightpath Studio',
-    role: 'Frontend Developer',
-    duration: 'Jun 2023 — Dec 2023',
-    location: 'Pune, India',
-    type: 'Contract',
+    role: 'Frontend-Entwickler',
+    duration: 'Juni 2023 — Dez. 2023',
+    location: 'Pune, Indien',
+    type: 'Projektbasis',
     points: [
-      'Shipped 9 client marketing sites with Lighthouse scores above 95 across all categories.',
-      'Introduced a design-token workflow between Figma and Tailwind, removing most style drift.',
-      'Set up visual regression tests that caught layout bugs before every release.',
+      'Ich habe 9 Marketing-Websites für Kunden ausgeliefert, die in allen Kategorien Lighthouse-Werte über 95 erzielten.',
+      'Ich habe einen Workflow für Design-Tokens zwischen Figma und Tailwind eingeführt und damit die meisten Styleschwankungen reduziert.',
+      'Ich habe visuelle Regressionstests eingerichtet, die Layoutfehler vor jeder Veröffentlichung erkannt haben.',
     ],
     tech: ['React', 'Tailwind CSS', 'Figma', 'Vercel'],
   },
   {
     company: 'Cobalt Systems',
-    role: 'Software Engineering Intern',
-    duration: 'Jan 2023 — May 2023',
+    role: 'Werkstudent im Software-Engineering',
+    duration: 'Jan. 2023 — Mai 2023',
     location: 'Hybrid — Bengaluru',
-    type: 'Internship',
+    type: 'Praktikum',
     points: [
-      'Built internal admin tooling in Laravel that reduced manual order corrections by 60%.',
-      'Wrote integration tests for the billing module, raising coverage from 41% to 78%.',
-      'Paired weekly with senior engineers on code reviews and database query tuning.',
+      'Ich habe interne Admin-Tools in Laravel entwickelt, die manuelle Auftragskorrekturen um 60 % reduziert haben.',
+      'Ich habe Integrationstests für das Billing-Modul geschrieben und die Testabdeckung von 41 % auf 78 % erhöht.',
+      'Ich habe wöchentlich mit Senior-Engineer:innen Code-Reviews und Datenbank-Query-Optimierungen durchgeführt.',
     ],
     tech: ['Laravel', 'PHP', 'MySQL', 'Docker'],
   },
@@ -154,7 +154,7 @@ export const projects: Project[] = [
   {
     title: 'Pulse Analytics',
     description:
-      'A self-hosted product analytics dashboard with real-time event streams, funnel reports and cohort retention charts.',
+      'Ein selbst gehostetes Produkt-Analytics-Dashboard mit Echtzeit-Eventstreams, Funnel-Reports und Cohort-Retention-Chart.',
     image: '/projects/analytics-dashboard.png',
     tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Redis'],
     demo: 'https://example.com',
@@ -164,7 +164,7 @@ export const projects: Project[] = [
   {
     title: 'Marketplace Storefront',
     description:
-      'Headless commerce storefront with server-rendered product pages, cart persistence and Stripe checkout.',
+      'Headless-Commerce-Storefront mit server-gerenderten Produktseiten, Warenkorb-Persistenz und Stripe-Checkout.',
     image: '/projects/ecommerce.png',
     tech: ['React', 'Node.js', 'Stripe', 'Tailwind CSS'],
     demo: 'https://example.com',
@@ -173,7 +173,7 @@ export const projects: Project[] = [
   {
     title: 'Tandem Boards',
     description:
-      'Collaborative kanban app with live presence, optimistic drag and drop, and per-workspace permissions.',
+      'Kollaborative Kanban-App mit Live-Präsenz, optimistischen Drag-and-Drop-Funktionen und Berechtigungen pro Workspace.',
     image: '/projects/collab-app.png',
     tech: ['Next.js', 'WebSockets', 'Prisma', 'Supabase'],
     demo: 'https://example.com',
@@ -182,7 +182,7 @@ export const projects: Project[] = [
   {
     title: 'Forge API Platform',
     description:
-      'Developer platform with generated SDKs, interactive API docs, scoped keys and usage-based rate limiting.',
+      'Developer-Plattform mit generierten SDKs, interaktiver API-Dokumentation, begrenzten Schlüsseln und nutzungsbasierten Rate Limits.',
     image: '/projects/api-platform.png',
     tech: ['Laravel', 'PHP', 'MySQL', 'Docker'],
     demo: 'https://example.com',
@@ -205,7 +205,7 @@ export const certifications: Certification[] = [
     issuer: 'Amazon Web Services',
     icon: 'FaAws',
     color: '#FF9900',
-    date: 'March 2025',
+    date: 'März 2025',
     url: 'https://example.com',
   },
   {
@@ -221,17 +221,17 @@ export const certifications: Certification[] = [
     issuer: 'MongoDB University',
     icon: 'SiMongodb',
     color: '#47A248',
-    date: 'January 2024',
+    date: 'Januar 2024',
     url: 'https://example.com',
   },
 ]
 
 export const navItems = [
-  { label: 'Home', href: '#home' },
-  { label: 'About', href: '#about' },
+  { label: 'Start', href: '#home' },
+  { label: 'Über mich', href: '#about' },
   { label: 'Skills', href: '#skills' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Certifications', href: '#certifications' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Erfahrung', href: '#experience' },
+  { label: 'Projekte', href: '#projects' },
+  { label: 'Zertifikate', href: '#certifications' },
+  { label: 'Kontakt', href: '#contact' },
 ] as const

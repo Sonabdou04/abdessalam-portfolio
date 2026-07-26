@@ -6,7 +6,7 @@ export function AboutSection() {
   return (
     <section id="about" className="px-6 py-24">
       <div className="mx-auto flex w-full max-w-4xl flex-col gap-10">
-        <SectionHeading eyebrow="About" title="A developer who ships end to end" />
+        <SectionHeading eyebrow="Über mich" title="Ein Entwickler, der alles von Anfang bis Ende umsetzt" />
 
         <div className="flex flex-col gap-10 md:flex-row md:items-start">
           <Reveal className="md:w-64 md:shrink-0">

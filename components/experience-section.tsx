@@ -11,9 +11,9 @@ export function ExperienceSection() {
     <section id="experience" className="px-6 py-24">
       <div className="mx-auto flex w-full max-w-4xl flex-col gap-12">
         <SectionHeading
-          eyebrow="Experience"
-          title="Where I have worked"
-          description="Roles and internships, most recent first."
+          eyebrow="Erfahrung"
+          title="Wo ich gearbeitet habe"
+          description="Rollen und Praktika, jeweils das neueste zuerst."
         />
 
         <ol className="relative flex flex-col gap-10 pl-8">

@@ -79,7 +79,7 @@ export function HeroSection() {
             <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-75" />
             <span className="relative inline-flex size-1.5 rounded-full bg-primary" />
           </span>
-          Available for new projects
+          Verfügbar für neue Projekte
           <span className="inline-flex items-center gap-1 border-l border-border pl-2">
             <MapPin className="size-3" />
             {profile.location}
@@ -114,7 +114,7 @@ export function HeroSection() {
             href="#projects"
             className={cn(buttonVariants({ size: 'lg' }), 'h-11 px-5 text-sm')}
           >
-            View Projects
+            Projekte ansehen
             <ArrowDown className="size-4" />
           </a>
           <a
@@ -126,7 +126,7 @@ export function HeroSection() {
             )}
           >
             <Download className="size-4" />
-            Download Resume
+            Lebenslauf herunterladen
           </a>
         </motion.div>
 

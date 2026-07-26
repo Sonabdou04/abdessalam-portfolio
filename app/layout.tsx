@@ -8,21 +8,21 @@ const _geistSans = Geist({ subsets: ['latin'] })
 const _geistMono = Geist_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Aarav Mehta — Full Stack Developer',
+  title: 'Aarav Mehta — Full-Stack-Entwickler',
   description:
-    'Portfolio of Aarav Mehta, a full stack developer building fast, accessible web products with React, Next.js, Laravel and Node.js.',
+    'Portfolio von Aarav Mehta, einem Full-Stack-Entwickler, der schnelle, zugängliche Webprodukte mit React, Next.js, Laravel und Node.js baut.',
   generator: 'v0.app',
   keywords: [
-    'full stack developer',
-    'react developer',
+    'full stack entwickler',
+    'react entwickler',
     'next.js',
     'laravel',
     'portfolio',
   ],
   openGraph: {
-    title: 'Aarav Mehta — Full Stack Developer',
+    title: 'Aarav Mehta — Full-Stack-Entwickler',
     description:
-      'Full stack developer building fast, accessible web products with React, Next.js, Laravel and Node.js.',
+      'Full-Stack-Entwickler, der schnelle, zugängliche Webprodukte mit React, Next.js, Laravel und Node.js baut.',
     type: 'website',
   },
   icons: {
@@ -58,7 +58,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="bg-background">
+    <html lang="de" suppressHydrationWarning className="bg-background">
       <body className="font-sans antialiased">
         <ThemeProvider
           attribute="class"

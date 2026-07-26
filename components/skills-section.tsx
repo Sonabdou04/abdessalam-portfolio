@@ -8,8 +8,8 @@ export function SkillsSection() {
       <div className="mx-auto flex w-full max-w-4xl flex-col gap-12">
         <SectionHeading
           eyebrow="Skills"
-          title="Tools I reach for"
-          description="The stack I use day to day, grouped by where it sits in the product."
+          title="Die Tools, die ich nutze"
+          description="Der Stack, den ich täglich verwende, gruppiert nach ihrer Rolle im Produkt."
         />
 
         <div className="flex flex-col gap-10">
