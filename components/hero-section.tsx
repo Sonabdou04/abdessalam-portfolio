@@ -45,7 +45,6 @@ function useTypewriter(words: readonly string[]) {
 const socialLinks = [
   { label: 'GitHub', href: profile.socials.github, Icon: FaGithub },
   { label: 'LinkedIn', href: profile.socials.linkedin, Icon: FaLinkedinIn },
-  { label: 'Twitter', href: profile.socials.twitter, Icon: FaXTwitter },
   { label: 'Email', href: `mailto:${profile.email}`, Icon: Mail },
 ]
 

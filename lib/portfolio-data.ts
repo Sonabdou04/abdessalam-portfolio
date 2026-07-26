@@ -4,35 +4,34 @@
  */
 
 export const profile = {
-  name: 'Aarav Mehta',
+  name: 'Abdessalam Chaabani',
   roles: [
     'Full-Stack-Entwickler',
     'React-Entwickler',
     'Laravel-Entwickler',
-    'UI-Handwerker',
   ],
   tagline:
-    'Ich entwerfe und baue schnelle, zugängliche Webprodukte — von pixelgenauen Interfaces bis hin zu den APIs und Datenbanken dahinter.',
-  location: 'Pune, Indien',
-  email: 'hello@aaravmehta.dev',
-  resumeUrl: '/resume.pdf',
+    'Ich entwerfe und baue schnelle, zugängliche Webprodukte',
+  location: 'Casablanca, Marokko',
+  email: 'abdessalam.chaabani2004@outlook.com',
+  resumeUrl: '/resume.pdf', // LINK TO RESUME PDF
   socials: {
-    github: 'https://github.com/',
-    linkedin: 'https://linkedin.com/in/',
+    github: 'https://github.com/Sonabdou04',
+    linkedin: 'https://www.linkedin.com/in/abdessalam-chaabani-42050b336',
     twitter: 'https://twitter.com/',
   },
 } as const
 
 export const about = {
   bio: [
-    'Ich bin Full-Stack-Entwickler mit starker Fokussierung auf schnelle Umsetzung. In den letzten drei Jahren habe ich Dashboards, Shop-Frontends und interne Tools entwickelt, die von Tausenden Menschen genutzt werden — oft als die Person, die sowohl das Interface als auch die dahinterliegende API verantwortet.',
-    'Meine Lieblingsarbeit liegt an der Schnittstelle von Performance und Design: Sekunden aus Ladezeiten herausholen, eine Komponenten-API entwickeln, die andere Entwickler gern nutzen, oder eine fragile Abfrage durch etwas Skalierbares ersetzen. Außerhalb der Arbeit schreibe ich über Frontend-Architektur und unterstütze Junior-Entwickler.',
+    'Ich bin Full-Stack-Entwickler und baue gerne praktische Web-Anwendungen. In den letzten Jahren habe ich Dashboards, Online-Shops und interne Tools entwickelt. Dabei erstelle ich oft das Design im Frontend und baue auch das Backend mit den APIs.',
+    'Mir macht es einfach Spaß, gute Web-Anwendungen zu bauen: Ob saubere UIs umsetzen, Ladezeiten ein bisschen schneller machen oder dafür sorgen, dass das Frontend reibungslos mit dem Backend zusammenspielt.',
   ],
   stats: [
-    { label: 'Jahre Erfahrung', value: '3+' },
-    { label: 'Abgeschlossene Projekte', value: '25' },
-    { label: 'Technologien im Einsatz', value: '18' },
-    { label: 'Open-Source-PRs', value: '40+' },
+    { label: 'Monate Praktikum', value: '7+' },
+    { label: 'Hauptprojekte', value: '4' },
+    { label: 'Zertifikate', value: '7' },
+    { label: 'Motivation', value: '101%' },
   ],
 } as const
 
@@ -49,41 +48,35 @@ export const skills: SkillCategory[] = [
       { name: 'Next.js', icon: 'SiNextdotjs', color: 'currentColor' },
       { name: 'TypeScript', icon: 'SiTypescript', color: '#3178C6' },
       { name: 'JavaScript', icon: 'SiJavascript', color: '#F7DF1E' },
+      { name: 'HTML', icon: 'FaHtml5', color: '#E34F26' },
+      { name: 'CSS', icon: 'FaCss3Alt', color: '#1572B6' },
       { name: 'Tailwind CSS', icon: 'SiTailwindcss', color: '#38BDF8' },
-      { name: 'Redux', icon: 'SiRedux', color: '#764ABC' },
+      { name: 'Bootstrap', icon: 'SiBootstrap', color: '#563D7C' },
+      
     ],
   },
   {
     category: 'Backend',
     items: [
-      { name: 'Node.js', icon: 'SiNodedotjs', color: '#5FA04E' },
-      { name: 'Express', icon: 'SiExpress', color: 'currentColor' },
       { name: 'Laravel', icon: 'SiLaravel', color: '#FF2D20' },
       { name: 'PHP', icon: 'SiPhp', color: '#777BB4' },
       { name: 'Python', icon: 'SiPython', color: '#3776AB' },
-      { name: 'GraphQL', icon: 'SiGraphql', color: '#E10098' },
+      { name: 'Java', icon: 'FaJava', color: '#F89820' },
     ],
   },
   {
     category: 'Datenbanken',
     items: [
-      { name: 'PostgreSQL', icon: 'SiPostgresql', color: '#4169E1' },
       { name: 'MySQL', icon: 'SiMysql', color: '#4479A1' },
       { name: 'MongoDB', icon: 'SiMongodb', color: '#47A248' },
-      { name: 'Redis', icon: 'SiRedis', color: '#FF4438' },
-      { name: 'Prisma', icon: 'SiPrisma', color: 'currentColor' },
-      { name: 'Supabase', icon: 'SiSupabase', color: '#3FCF8E' },
     ],
   },
   {
     category: 'DevOps & Tools',
     items: [
       { name: 'Git', icon: 'SiGit', color: '#F05032' },
-      { name: 'Docker', icon: 'SiDocker', color: '#2496ED' },
-      { name: 'GitHub Actions', icon: 'SiGithubactions', color: '#2088FF' },
-      { name: 'Vercel', icon: 'SiVercel', color: 'currentColor' },
-      { name: 'Linux', icon: 'SiLinux', color: '#FCC624' },
-      { name: 'Figma', icon: 'SiFigma', color: '#F24E1E' },
+      { name: 'GitHub', icon: 'SiGithub', color: '#24292E' },
+      { name: 'Postman', icon: 'SiPostman', color: '#FF6C37' },
     ],
   },
 ]
@@ -116,7 +109,7 @@ export const experience: Experience[] = [
     company: 'Brightpath Studio',
     role: 'Frontend-Entwickler',
     duration: 'Juni 2023 — Dez. 2023',
-    location: 'Pune, Indien',
+    location: 'Casablanca, Marokko',
     type: 'Projektbasis',
     points: [
       'Ich habe 9 Marketing-Websites für Kunden ausgeliefert, die in allen Kategorien Lighthouse-Werte über 95 erzielten.',
@@ -201,28 +194,60 @@ export type Certification = {
 
 export const certifications: Certification[] = [
   {
-    title: 'AWS Certified Developer — Associate',
-    issuer: 'Amazon Web Services',
-    icon: 'FaAws',
-    color: '#FF9900',
-    date: 'März 2025',
-    url: 'https://example.com',
+    title: 'Git and GitHub',
+    issuer: '365 Data  Science',
+    icon: 'FaGraduationCap',
+    color: '#0F766E',
+    date: 'November 2024',
+    url: 'certifications/CC-6AFEF0E5FF.pdf',
   },
   {
-    title: 'Meta Front-End Developer Professional',
-    issuer: 'Meta / Coursera',
-    icon: 'SiMeta',
-    color: '#0866FF',
-    date: 'September 2024',
-    url: 'https://example.com',
+    title: 'Java Programming for Beginners',
+    issuer: 'Coursera',
+    icon: 'SiCoursera',
+    color: '#2A73CC',
+    date: 'Juli 2025',
+    url: 'certifications/Coursera%20YW7ICUKBQ8H4.pdf',
   },
   {
-    title: 'MongoDB Associate Developer',
-    issuer: 'MongoDB University',
-    icon: 'SiMongodb',
-    color: '#47A248',
-    date: 'Januar 2024',
-    url: 'https://example.com',
+    title: 'Prompt Engineering for ChatGPT',
+    issuer: 'Coursera',
+    icon: 'SiCoursera',
+    color: '#2A73CC',
+    date: 'August 2025',
+    url: 'certifications/Coursera%20WSNJQTACAC7P.pdf',
+  },
+  {
+    title: 'Start Writing Prompts like a Pro',
+    issuer: 'Google',
+    icon: 'SiGoogle',
+    color: '#4285F4',
+    date: 'August 2025',
+    url: 'certifications/Coursera%20WSNJQTACAC7P.pdf',
+  },
+  {
+    title: 'Next.js: Creating and Hosting a Full-Stack Site',
+    issuer: 'Linkedin Learning',
+    icon: 'FaLinkedin',
+    color: '#0A66C2',
+    date: 'Oktober 2025',
+    url: 'certifications/1760981859553.pdf',
+  },
+  {
+    title: 'Introduction to Python',
+    issuer: '365 Data  Science',
+    icon: 'FaGraduationCap',
+    color: '#0F766E',
+    date: 'November 2024',
+    url: 'certifications/CC-19D96AB876.pdf',
+  },
+  {
+    title: 'Intro to ChatGPT and Generative AI',
+    issuer: '365 Data  Science',
+    icon: 'FaGraduationCap',
+    color: '#0F766E',
+    date: 'November 2024',
+    url: 'certifications/CC-9FE977E245.pdf',
   },
 ]
 

@@ -9,7 +9,7 @@ export function SkillsSection() {
         <SectionHeading
           eyebrow="Skills"
           title="Die Tools, die ich nutze"
-          description="Der Stack, den ich täglich verwende, gruppiert nach ihrer Rolle im Produkt."
+          description="Tools und Technologien, mit denen ich täglich arbeite:"
         />
 
         <div className="flex flex-col gap-10">
