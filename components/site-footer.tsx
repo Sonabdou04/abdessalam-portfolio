@@ -6,7 +6,6 @@ import { navItems, profile } from '@/lib/portfolio-data'
 const socials = [
   { label: 'GitHub', href: profile.socials.github, Icon: FaGithub },
   { label: 'LinkedIn', href: profile.socials.linkedin, Icon: FaLinkedinIn },
-  { label: 'Twitter', href: profile.socials.twitter, Icon: FaXTwitter },
   { label: 'Email', href: `mailto:${profile.email}`, Icon: Mail },
 ]
 
@@ -17,7 +16,7 @@ export function SiteFooter() {
         <Separator />
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <p className="text-xs text-muted-foreground">
-            {`© ${new Date().getFullYear()} ${profile.name}. Built with Next.js and Tailwind CSS.`}
+            {`© ${new Date().getFullYear()} ${profile.name}. Entwickelt mit Next.js und Tailwind CSS.`}
           </p>
 
           <nav aria-label="Footer navigation">
