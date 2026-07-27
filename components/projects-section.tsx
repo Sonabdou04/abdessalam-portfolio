@@ -20,7 +20,7 @@ export function ProjectsSection() {
           <SectionHeading
             eyebrow="Projekte"
             title="Ausgewählte Arbeiten"
-            description="Ein paar Dinge, die ich entworfen, gebaut und ausgeliefert habe."
+            description="Ein paar Projekte, die ich entwickelt, gebaut und veröffentlicht habe."
           />
         </div>
 
@@ -42,7 +42,7 @@ export function ProjectsSection() {
                       className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-80"
                     />
                     <div className="absolute inset-x-0 bottom-0 flex translate-y-2 items-center gap-2 p-3 opacity-0 transition-all duration-300 group-hover/project:translate-y-0 group-hover/project:opacity-100 group-focus-within/project:translate-y-0 group-focus-within/project:opacity-100">
-                      <Badge
+                      {project.demo && <Badge
                         render={
                           <a
                             href={project.demo}
@@ -54,21 +54,41 @@ export function ProjectsSection() {
                       >
                         <ExternalLink aria-hidden="true" />
                         Live-Demo
-                      </Badge>
-                      <Badge
-                        variant="secondary"
-                        render={
-                          <a
-                            href={project.repo}
-                            target="_blank"
-                            rel="noreferrer"
-                            aria-label={`Open the GitHub repository for ${project.title}`}
-                          />
-                        }
-                      >
-                        <FaGithub aria-hidden="true" />
-                        GitHub
-                      </Badge>
+                      </Badge>}
+
+                      {project.repo && (
+                        <Badge
+                          variant="secondary"
+                          render={
+                            <a
+                              href={project.repo}
+                              target="_blank"
+                              rel="noreferrer"
+                              aria-label={`Open the GitHub repository for ${project.title}`}
+                            />
+                          }
+                        >
+                          <FaGithub aria-hidden="true" />
+                          GitHub
+                        </Badge>
+                      )}
+                      {project.repos?.map((repo) => (
+                        <Badge
+                          key={repo.label}
+                          variant="secondary"
+                          render={
+                            <a
+                              href={repo.url}
+                              target="_blank"
+                              rel="noreferrer"
+                              aria-label={`Open the ${repo.label} repository for ${project.title}`}
+                            />
+                          }
+                        >
+                          <FaGithub aria-hidden="true" />
+                          {repo.label}
+                        </Badge>
+                      ))}
                     </div>
                   </div>
 

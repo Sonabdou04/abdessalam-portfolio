@@ -150,47 +150,49 @@ export type Project = {
   image: string
   tech: string[]
   demo: string
-  repo: string
-  featured?: boolean
+  repo?: string
+  repos?: { label: string; url: string }[];
+
 }
 
 export const projects: Project[] = [
   {
-    title: 'Pulse Analytics',
-    description:
-      'Ein selbst gehostetes Produkt-Analytics-Dashboard mit Echtzeit-Eventstreams, Funnel-Reports und Cohort-Retention-Chart.',
-    image: '/projects/analytics-dashboard.png',
-    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Redis'],
-    demo: 'https://example.com',
-    repo: 'https://github.com/',
-    featured: true,
+    title: 'Quotely: Zitate-Plattform',
+    description: 'Eine Web-Anwendung zum Entdecken, Speichern und Teilen von inspirierenden Zitaten. Nutzer können Zitate nach Kategorien durchsuchen und ihre Favoriten in einem eigenen Profil speichern.',
+    image: '/projects/quotely.png',
+    tech: ['React', 'Tailwind CSS', 'Laravel', 'REST API', 'MySQL', 'Git', 'GitHub', 'Postman'],
+    demo: 'https://quotely-space.netlify.app/',
+    repo: 'https://github.com/Sonabdou04/QuotelyProject',
   },
   {
-    title: 'Marketplace Storefront',
+    title: 'MoneyMaster: Finanz-Manager',
     description:
-      'Headless-Commerce-Storefront mit server-gerenderten Produktseiten, Warenkorb-Persistenz und Stripe-Checkout.',
-    image: '/projects/ecommerce.png',
-    tech: ['React', 'Node.js', 'Stripe', 'Tailwind CSS'],
-    demo: 'https://example.com',
-    repo: 'https://github.com/',
+      'Plattform für digitales Finanzmanagement. Die Anwendung hilft dabei, tägliche Ausgaben zu kontrollieren, Sparziele zu setzen und durch übersichtliche Statistiken den Überblick über das eigene Geld zu behalten.',
+    image: '/projects/money-management-project.png',
+    tech: ['React', 'Tailwind CSS', 'Laravel', 'REST API', 'MySQL', 'Git', 'GitHub', 'Postman'],
+    demo: "",
+    repos: [
+    { label: 'Frontend', url: 'https://github.com/Sonabdou04/money-management-frontend' },
+    { label: 'Backend', url: 'https://github.com/Sonabdou04/money-management-backend' },
+  ],
   },
   {
-    title: 'Tandem Boards',
+    title: 'EventHub: Event-Plattform',
     description:
-      'Kollaborative Kanban-App mit Live-Präsenz, optimistischen Drag-and-Drop-Funktionen und Berechtigungen pro Workspace.',
-    image: '/projects/collab-app.png',
-    tech: ['Next.js', 'WebSockets', 'Prisma', 'Supabase'],
-    demo: 'https://example.com',
-    repo: 'https://github.com/',
+      'Eine Plattform für Entwickler zum Entdecken von Meetups, Hackathons und Workshops. Nutzer können aktuelle IT-Events durchsuchen, Details einsehen und sich für Veranstaltungen anmelden.',
+    image: '/projects/dev-event-project.png',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'REST API', 'MongoDB', 'Git', 'GitHub', 'Postman', 'Better-Auth'],
+    demo: '',
+    repo: 'https://github.com/Sonabdou04/dev-event',
   },
   {
-    title: 'Forge API Platform',
+    title: 'FITPRO: Fitness- & E-Commerce-Plattform',
     description:
-      'Developer-Plattform mit generierten SDKs, interaktiver API-Dokumentation, begrenzten Schlüsseln und nutzungsbasierten Rate Limits.',
-    image: '/projects/api-platform.png',
-    tech: ['Laravel', 'PHP', 'MySQL', 'Docker'],
-    demo: 'https://example.com',
-    repo: 'https://github.com/',
+      'Eine Plattform für Trainingspläne, Ernährung und Fitness-Ausrüstung. Nutzer können Workouts durchsuchen, Fitnessprodukte im Shop kaufen und ihre Bestellungen verwalten.',
+    image: '/projects/fitness-project.png',
+    tech: ['React', 'Tailwind CSS', 'Laravel', 'MySQL', 'Git', 'GitHub', 'Inertia.js'],
+    demo: '',
+    repo: 'https://gitlab.com/Sonabdou04/fitnesse',
   },
 ]
 
