@@ -236,7 +236,7 @@ export const certifications: Certification[] = [
     icon: 'SiGoogle',
     color: '#4285F4',
     date: 'August 2025',
-    url: 'certifications/Coursera%20WSNJQTACAC7P.pdf',
+    url: 'certifications/Coursera%20BH431FB5A2HA.pdf',
   },
   {
     title: 'Next.js: Creating and Hosting a Full-Stack Site',
