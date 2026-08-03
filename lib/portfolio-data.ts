@@ -205,6 +205,28 @@ export type Certification = {
   url: string
 }
 
+export type Education = {
+  institution?: string
+  degree: string
+  duration: string
+  location: string
+}
+
+export const education: Education[] = [
+  {
+    institution: 'FACHINSTITUT FÜR MANAGEMENT UND INFORMATIK CASABLANCA',
+    degree: 'Fachtechniker-DIPLOM: Digitale Entwicklung - Web Full Stack',
+    duration: '2023 – 2025',
+    location: 'Casablanca, Marokko',
+  },
+  {
+    institution: 'FACHGYMNASTUM EL MANSOUR EDDAHBI',
+    degree: 'Abitur',
+    duration: '2022',
+    location: 'Casablanca, Marokko',
+  },
+]
+
 export const certifications: Certification[] = [
   {
     title: 'Git and GitHub',
@@ -269,6 +291,7 @@ export const navItems = [
   { label: 'Über mich', href: '#about' },
   { label: 'Skills', href: '#skills' },
   { label: 'Erfahrung', href: '#experience' },
+  { label: 'Bildung', href: '#education' },
   { label: 'Projekte', href: '#projects' },
   { label: 'Zertifikate', href: '#certifications' },
   { label: 'Kontakt', href: '#contact' },
