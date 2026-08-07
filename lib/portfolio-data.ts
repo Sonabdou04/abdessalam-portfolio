@@ -161,7 +161,7 @@ export const projects: Project[] = [
     description: 'Eine Web-Anwendung zum Entdecken, Speichern und Teilen von inspirierenden Zitaten. Nutzer können Zitate nach Kategorien durchsuchen und ihre Favoriten in einem eigenen Profil speichern.',
     image: '/projects/quotely.png',
     tech: ['React', 'Tailwind CSS', 'Laravel', 'REST API', 'MySQL', 'Git', 'GitHub', 'Postman'],
-    demo: 'https://quotely-space.netlify.app/',
+    demo: '',
     repo: 'https://github.com/Sonabdou04/QuotelyProject',
   },
   {
